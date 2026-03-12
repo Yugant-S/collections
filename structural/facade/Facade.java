@@ -3,10 +3,10 @@ class HomeTheaterFacade {
     private Projector projector;
     private SoundSystem sound;
 
-    public HomeTheaterFacade(DVDPlayer dvd, Projector projector, SoundSystem sound) {
-        this.dvd = dvd;
-        this.projector = projector;
-        this.sound = sound;
+    public HomeTheaterFacade() {
+        this.dvd = new DVDPlayer();
+        this.projector = new Projector();
+        this.sound = new SoundSystem();
     }
 
     public void watchMovie() {
